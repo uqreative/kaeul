@@ -1,0 +1,69 @@
+.content_body.inquiry {
+    grid-template-columns: 1fr; 
+}
+.inquiry-form {
+    background-color: var(--list-container);
+    padding-block: 160rem;
+}
+.inquiry-form > form { 
+    display: flex;
+    flex-direction: column;
+    row-gap: 24rem;
+    margin: 0 auto;
+ }
+.inquiry-form > form > div {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        height: 50px;
+        border-radius: 5px;
+        border: solid 1px #cfcfcf;
+        padding-inline: 22rem;
+    }
+
+    textarea {
+        border-radius: 5px;
+        border: solid 1px #cfcfcf;
+        padding-inline: 22rem;
+        padding-block: 12rem;
+    }
+
+    label { 
+        margin-bottom: 12rem;
+        font-size: var(--fs18);
+        font-weight: normal;
+        color: var(--black-muted);
+     }
+}
+.btn_submit {
+    color: var(--white);
+    background-color: var(--black-muted);
+    margin: 110rem auto 0;
+    border-radius: 5px;
+    padding: 15rem 58rem;
+
+    &:hover {
+        background-color: var(--primary);
+        color: var(--white);
+    }
+}
+
+.inquiry-form_phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 8rem;
+
+    input {width: 25%;} 
+}
+
+@media (max-width: 767px) {
+    .inquiry-form { 
+        padding-block: 30rem;
+        padding-inline: 28rem;
+     }
+     .btn_submit {
+        margin: 10rem auto 0;
+    }
+}

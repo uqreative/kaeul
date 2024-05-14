@@ -1,0 +1,14 @@
+@import url(/css/content/content_01_about.css);
+@import url(/css/content/content_02_product.css);
+@import url(/css/content/content_03_equipment.css);
+@import url(/css/content/content_04_cust-service.css);
+@import url(/css/content/content_05_inquiry.css);
+
+.main:not(:has(>.background_text)) {
+    padding-bottom: 173rem;
+}
+@media (max-width: 767px) {
+    .main:not(:has(>.background_text)) {
+        padding-bottom: 33rem;
+    }
+}

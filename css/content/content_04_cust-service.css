@@ -1,0 +1,15 @@
+.sub_head__visual-image.cust-service {
+    background-image: url("/images/content/04_cust-service/04_sub_visual-image.jpg");
+}
+.content_body.cust-service {
+    grid-template-columns: 1fr; 
+}
+
+.cust-service .search_bbs {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cust-service .bbsList {
+    margin-block: 70rem 0;
+}

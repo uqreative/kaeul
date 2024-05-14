@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko" class="lenis lenis-smooth">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KAEUL</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/common/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/board.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/content.css">
+
+
+    <!-- Phosphor icons - phosphoricons.com   -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- swiper  -->
+    <link rel="stylesheet" href="/css/dist/swiper-bundle.min.css" />
+    <script src="/js/dist/swiper-bundle.min.js"></script>
+
+    <!-- aos@2.3.1  -->
+    <link rel="stylesheet" href="/css/dist/aos.css">
+
+    <!-- lenis@1.0.45 -->
+    <link rel="stylesheet" href="/css/dist/lenis.css">
+    <script src="/js/dist/lenis.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <header >
+        <div class="inr">
+
+            <h1 class="logo">
+                <a class="logo__a" href="/">
+                    <img class="logo__img" src="/images/common/navbar-logo.png" alt="logo" width="200">
+                </a>
+            </h1>
+
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">회사소개</a>
+                        <ul class="subMenu">
+                            <li><a href="/content/01_about/01_greetings.html">인사말</a></li>
+                            <li><a href="/content/01_about/02_history.html">연혁</a></li>
+                            <li><a href="/content/01_about/03_org-chart.html">조직도</a></li>
+                            <li><a href="/content/01_about/04_certification.html">인증서</a></li>
+                            <li><a href="/content/01_about/05_direction.html">오시넌길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">제품소개</a>
+                        <ul class="subMenu">
+                            <li><a href="/content/02_Product/01_control-box.html">컨트롤박서</a></li>
+                            <li><a href="/content/02_Product/02_parts.html">부품밎기타</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/content/03_equipment/01_manufacturing-eq.html">제조설비</a>
+                    </li>
+                    <li><a href="#">고객센터</a>
+                        <ul class="subMenu">
+                            <li><a href="/content/04_customer-service/01_announcement.html">공지사항</a></li>
+                            <li><a href="/content/04_customer-service/02_reference.html">자료실</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/content/05_inquiry/01_inquiry.html">온라인문의</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="hamburger-menu">
+                <a href="#" id="openSlidemenu">
+                    <i class="ph-bold ph-list"></i>
+                </a>
+            </div>
+
+            <div class="mGnb" id="slideMenu">
+                <!-- header menu 삽입 -->
+                <div class="mGnb__header">
+                    <img src="/images/common/logo_company_white.svg" width="200" alt="">
+                    <a href="#" id="closeSlidemenu">
+                        <i class="ph-bold ph-x"></i>
+                    </a>
+                </div>
+                <div class="slide-menu_logo">
+
+                    <div class="mGnb__license">
+                        <img src="/images/common/logogram-inside.svg" width="86" alt="">
+                        <p>사업자번호 504-81-95861</p>
+                    </div>
+
+                    <ul class="mGnb__ul">
+                        <li>
+                            <a href="#" data-gnb="1" class="open">
+                                <h3>회사소개</h3>
+                                <p>About Us</p>
+                            </a>
+                            <ul class="subMenu">
+                                <li><a href="/content/01_about/01_greetings.html" data-gnb="2">인사말</a></li>
+                                <li><a href="/content/01_about/02_history.html" data-gnb="2">연혁</a></li>
+                                <li><a href="/content/01_about/03_org-chart.html" data-gnb="2">조직도</a></li>
+                                <li><a href="/content/01_about/04_certification.html" data-gnb="2">인증서</a></li>
+                                <li><a href="/content/01_about/05_direction.html" data-gnb="2">오시넌길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" data-gnb="1" class="open">
+                                <h3>제품소개</h3>
+                                <p>Introduction of Item</p>
+                            </a>
+                            <ul class="subMenu">
+                                <li><a href="/content/02_Product/01_control-box.html" data-gnb="2">컨트롤박서</a></li>
+                                <li><a href="/content/02_Product/02_parts.html" data-gnb="2">부품밎기타</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/content/03_equipment/01_manufacturing-eq.html" data-gnb="1" class="open">
+                                <h3>제조설비</h3>
+                                <p>Manufacturing Equipment</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-gnb="1" class="open">
+                                <h3>고객센터</h3>
+                                <p>Customer Service Center</p>
+                            </a>
+                            <ul class="subMenu">
+                                <li><a href="/content/04_customer-service/01_announcement.html" data-gnb="2">공지사항</a></li>
+                                <li><a href="/content/04_customer-service/02_reference.html" data-gnb="2">자료실</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/content/05_inquiry/01_inquiry.html" data-gnb="1" class="open">
+                                <h3>온라인문의</h3>
+                                <p>Online Inquiry</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="swiper heroSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="hero_slider_content"  style="background-image: url('/images/main/hero-01.jpg');">
+                            <div class="inr hero_slider_content-text">
+                                <h1 data-aos="fade-up" data-aos-duration="1300">고객의 비즈니스 혁신을 선도하고 </h1>
+                                <h1 data-aos="fade-up" data-aos-duration="1300" data-aos-delay="300"> 최고의 가치를 창출하는 판넬, 프레임, 제관, 판금 전문업체</h1>
+                                <a href="#" class="btn cta-btn"  data-aos="fade-up" data-aos-duration="1300" data-aos-delay="600">회사소개 바로가기 →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero_slider_content"  style="background-image: url('/images/main/hero-02.jpg');">
+                            <div class="inr hero_slider_content-text">
+                                <h1>고객의 비즈니스 혁신을 선도하고 </h1>
+                                <h1> 최고의 가치를 창출하는 판넬, 프레임, 제관, 판금 전문업체</h1>
+                                <a href="#" class="btn cta-btn">회사소개 바로가기 →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero_slider_content"  style="background-image: url('/images/main/hero-03.jpg');">
+                            <div class="inr hero_slider_content-text">
+                                <h1>고객의 비즈니스 혁신을 선도하고 </h1>
+                                <h1> 최고의 가치를 창출하는 판넬, 프레임, 제관, 판금 전문업체</h1>
+                                <a href="#" class="btn cta-btn">회사소개 바로가기 →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product">
+
+            <div class="inr">
+
+                <div class="section-tittle">
+                    <div data-aos="fade-up" data-aos-duration="1300">
+                        <h3>PRODUCTS</h3>
+                        <p>Major Equipment</p>
+                    </div>
+                    <a href="#" class="btn cta-btn" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">견적문의</a>
+                </div>
+
+                <div class="product-lists-container">
+
+                    <div class="product-lists-slider-control" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
+                        <div class="swiper-button-prev">
+                            <i class="ph-bold ph-caret-left"></i>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next">
+                            <i class="ph-bold ph-caret-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper product-lists" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="700">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="product-lists_slider_content">
+                                    <img src="./images/main/product-01.jpg" alt="">
+                                    <p>Bystronic 레이져컷팅기</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="product-lists_slider_content">
+                                    <img src="./images/main/product-02.jpg" alt="">
+                                    <p>AMADA CNC 펀칭기</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="product-lists_slider_content">
+                                    <img src="./images/main/product-03.jpg" alt="">
+                                    <p>Bystronic CNC 절곡기</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="product-lists_slider_content">
+                                    <img src="./images/main/product-01.jpg" alt="">
+                                    <p>Bystronic 레이져컷팅기</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="product-lists_slider_content">
+                                    <img src="./images/main/product-02.jpg" alt="">
+                                    <p>AMADA CNC 펀칭기</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="product-lists_slider_content">
+                                    <img src="./images/main/product-03.jpg" alt="">
+                                    <p>Bystronic CNC 절곡기</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="service">
+            <div class="inr">
+
+                <div class="section-tittle">
+                    <div>
+                        <h3 data-aos="fade-up" data-aos-duration="1300">SERVICE</h3>
+                        <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="100">㈜가을ENG는 고객의 소리에 귀 기울이며, <br>
+                            성원에 보답하고자 끊임없는 제품개발을 통한 신뢰를 약속합니다.</p>
+                    </div>
+                </div>
+
+                <div class="services-list">
+                    <ul>
+                        <li  data-aos="fade-up" data-aos-duration="1300" >
+                            <a href="#">
+                                <img src="./images/main/service-icon_1.svg" width="80px" alt="">
+                                <p>제조설비</p>
+                                <div class="service-list_btn">View More →</div>
+                            </a>
+                        </li>
+                        <li  data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">
+                            <a href="#">
+                                <img src="./images/main/service-icon_2.svg" width="80px" alt="">
+                                <p>인증서</p>
+                                <div class="service-list_btn">View More →</div>
+                            </a>
+                        </li>
+                        <li  data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
+                            <a href="#">
+                                <img src="./images/main/service-icon_3.svg" width="80px" alt="">
+                                <p>고객센터</p>
+                                <div class="service-list_btn">View More →</div>
+                            </a>
+                        </li>
+                        <li  data-aos="fade-up" data-aos-duration="1300" data-aos-delay="600">
+                            <a href="#">
+                                <img src="./images/main/service-icon_4.svg" width="80px" alt="">
+                                <p>온라인문의</p>
+                                <div class="service-list_btn">View More →</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="inr">
+            <div class="fnb">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+
+                <ul>
+                    <li>
+                        <p>대표이사 &nbsp; 백승학</p>
+                        <p>대표전화 &nbsp; 053-355-7522</p>
+                        <p>대표팩스 &nbsp; 053-352-9640</p>
+                    </li>
+                    <li>
+                        <p>사업자번호 &nbsp; 504-81-95861</p>
+                        <p>이메일 &nbsp; 3557522@hanmail.net</p>
+                    </li>
+                    <li>
+                        <p>주소</p>
+                        <p>대구광역시 북구 3공단로 27길 21-1 (본사) / 2공장(레이저공장) 대구광역시 북구 노원로17길 61 / 3공장(조립공장) 북구 3공단로 27길 23</p>
+                    </li>
+                </ul>
+
+                <div class="footer__logo">
+                    <img src="./images/common/logoGram.svg" width="45" alt="">
+                    <p>㈜가을</p>
+                </div>
+            </div>
+
+            <p class="copyright">COPYRIGHT Ⓒ 가을ENG ALL RIGHTS RESERVED. DESIGN BY KOWEB.</p>
+
+
+        </div>
+
+    </footer>
+
+    <!-- aos@2.3.1  -->
+    <script src="/js/dist/aos.js"></script>
+    
+    <script src="/js/dist/jquery-3.7.1.min.js"></script>
+    <script src="/js/custom.js"></script>
+    
+
+</body>
+
+</html>
