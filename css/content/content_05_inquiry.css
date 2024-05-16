@@ -66,4 +66,12 @@
      .btn_submit {
         margin: 10rem auto 0;
     }
+    .inquiry-form_phone { justify-content: space-between; }
 }
+@media (min-width: 768px) and (max-width: 1024px) { 
+    .inquiry-form { 
+        padding-block: 60rem;
+        padding-inline: 48rem;
+     }
+     .btn_submit { margin: 38rem auto 0; }
+ }

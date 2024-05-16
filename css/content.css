@@ -7,8 +7,32 @@
 .main:not(:has(>.background_text)) {
     padding-bottom: 173rem;
 }
+.sub_head .breadcrumb {
+    display: flex;
+    align-items: center;
+    column-gap: 22rem;
+    height: 80rem;
+    padding-inline: 40rem ;
+    border-radius: 5rem;
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    font-size: var(--fs16);
+    font-weight: 500;
+    margin-top: -36rem;
+
+    .ph.ph-house { font-size: 24rem; }
+}
 @media (max-width: 767px) {
     .main:not(:has(>.background_text)) {
         padding-bottom: 33rem;
+    }
+    .sub_head .breadcrumb {
+        height: 54rem; 
+        padding-inline: 20rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main:not(:has(>.background_text)) {
+        padding-bottom: 64rem;
     }
 }

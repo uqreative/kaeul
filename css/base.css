@@ -88,8 +88,11 @@ a{ text-decoration: none; color: inherit; }
 ul,ol,li{list-style:none;}
 
 /* mobile */
-body{-webkit-text-size-adjust:none; -moz-text-size-adjust:none; -ms-text-size-adjust:none;}
-
+body {
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
 /* 선택자 */
 ::selection{ background: var(--primary); color: var(--white); }
 .selection-reverse::selection,
@@ -161,9 +164,16 @@ body {
     font-weight: 400;
     font-style: normal;
     color: #353535 ;
-
+    overflow-y: hidden;
 }
+
 h1 {
     font-size: var(--fs45);
 }
 
+@media (max-width: 767px) {
+    body {overflow-y: auto;} 
+}
+@media (min-width: 768px) and (max-width: 1024px) { 
+    body {overflow-y: auto;} 
+}

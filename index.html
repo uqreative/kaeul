@@ -83,7 +83,7 @@
             <div class="mGnb" id="slideMenu">
                 <!-- header menu 삽입 -->
                 <div class="mGnb__header">
-                    <img src="/images/common/logo_company_white.svg" width="200" alt="">
+                    <a href="/"><img src="/images/common/logo_company_white.svg" width="200" alt=""></a>
                     <a href="#" id="closeSlidemenu">
                         <i class="ph-bold ph-x"></i>
                     </a>
@@ -149,7 +149,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="main">
         <section class="hero">
             <div class="swiper heroSwiper">
                 <div class="swiper-wrapper">
@@ -180,6 +180,12 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="scroll-anim">
+                <p>SCROLL</p>
+                <div class="line">
+                    <span></span>
                 </div>
             </div>
         </section>
@@ -260,12 +266,21 @@
 
                 </div>
 
+                <div class="product-link" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="500">
+                    <a href="#" class="btn btn-more">
+                        <p>더보기 →</p>
+                    </a>
+                </div>
+
             </div>
         </section>
 
 
         <section class="service">
             <div class="inr">
+
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
 
                 <div class="section-tittle">
                     <div>
@@ -312,6 +327,10 @@
         </section>
 
     </main>
+
+    <div class="backTop" id="goTopButton">
+        <i class="ph ph-caret-up"></i>
+    </div>
 
     <footer>
 

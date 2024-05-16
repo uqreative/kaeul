@@ -565,3 +565,5 @@ input[type="text"] + .input-txt {
 .pagination span{border-color: #222;color: #222;}
 .pagination a:not([class^="btn_"]):hover,
 .pagination a:not([class^="btn_"]):focus{border-color: #afafaf;}
+
+

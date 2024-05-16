@@ -12,21 +12,8 @@ Greetings ================================================
     h3 { font-size: var(--fs90); }
     p {font-size: var(--fs24);}
 }
-.sub_head__visual-image.about {background-image: url("/images/content/01_about/sub_visual-image.jpg");}
-.sub_head .breadcrumb {
-    display: flex;
-    align-items: center;
-    column-gap: 22rem;
-    height: 80px;
-    padding-inline: 40rem ;
-    border-radius: 5rem;
-    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.05);
-    background-color: #fff;
-    font-size: var(--fs16);
-    font-weight: 500;
-    margin-top: -36rem;
-
-    .ph.ph-house { font-size: 24rem; }
+.sub_head__visual-image.about {
+    background-image: url("/images/content/01_about/sub_visual-image.jpg");
 }
 .content .tittle h3 {
     text-align: center;
@@ -165,7 +152,7 @@ Organization Chart =======================================
     padding-inline: 74rem;
 }
 @media (max-width: 767px) {
-    .content_body.single { padding-inline: 64rem; }
+    .content_body.single { padding-inline: 16rem; }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .content_body.single { padding-inline: 124rem; }
@@ -207,25 +194,71 @@ Certification ============================================
     font-size: var(--fs22);
     font-weight: 500;
 }
+@media (max-width: 767px) {
+    .certificate-right, .certificate-left { grid-template-columns: 1fr; }
+    .cert-tittle { order: 1;}
+    :is(.certificate-right, .certificate-left) .cert-tittle_container {
+        height: auto;
+        padding: 12rem 18rem;
+        border-left: none;
+        border: 2rem solid #e3e3e3;
+        text-align: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content_body.single.certificate {
+        padding-inline: 16rem;
+        grid-row-gap: 48rem;
+    }
+    .certificate-right .cert-tittle_container {
+        border-left: 10rem solid var(--primary);
+        padding-left: 16rem;
+    }
+    .certificate-left .cert-tittle_container {
+        border-right: 10rem solid var(--primary);
+        padding-left: 16rem;
+    }
+}
 /* C̶e̶r̶t̶i̶f̶i̶c̶a̶t̶i̶o̶n̶ */
 
 /* =======================================================
 Direction ================================================
 ======================================================= */
-.direction_address {
+.content_body.single.map {
+    padding-inline: 0;
+}
+.direction { 
     display: flex;
-    justify-content: center;
-    margin-top: -30rem;
-    font-size: var(--fs20);
-    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
 
-    p {
-        text-align: center;
-        padding: 29rem 42rem;
-        background-color: var(--black-muted);
+    .direction_map { width: 100%; height: 80svh;}
+    .direction_map iframe { width: 100%; height: 100%; }
+
+    .direction_address {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -30rem;
+        font-size: var(--fs20);
+        font-weight: bold;
         color: var(--white);
+        background-color: var(--black-muted);
         border-radius: 5px;
-        width: auto;
+        padding: 29rem 42rem;
+        text-align: center;
+        width: 90%;
     }
+ }
+
+
+@media (max-width: 767px) {
+    .direction .direction_map { height: 80svh; }
+    
+    .direction .direction_address { margin-top: -64rem; padding: 12rem 12rem;}
+    .direction .direction_address p { width: 70svw; padding: 18rem 18rem;}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .direction .direction_map { height: 70svh; }
 }
 /* D̶i̶r̶e̶c̶t̶i̶o̶n̶ */

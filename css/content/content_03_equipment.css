@@ -1,3 +1,6 @@
+/* =======================================================
+ Manufacturing Equipment =================================
+======================================================= */
 .sub_head__visual-image.equipment {
     background-image: url("/images/content/03_equipment/03_sub_visual-image.jpg");
 }
@@ -13,3 +16,19 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40rem;
 }
+
+@media (max-width: 767px) { 
+    .equipment_items-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 12rem;
+        padding: 16rem;
+    }
+ }
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+    .equipment_items-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40rem;
+        padding: 28rem;
+    }
+ }

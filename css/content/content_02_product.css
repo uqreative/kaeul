@@ -144,6 +144,29 @@ Control Box ==============================================
         top: 17px;
       }
 }
-
-
+@media (max-width: 767px) { 
+    .content_body.product-list { grid-template-columns: 1fr; }
+    .product_items-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 12rem;
+        padding: 16rem;
+    }
+    .product-list .lnb__subMenu_items { flex-direction: row; }
+    .product-list .lnb__subMenu_items > li { flex-basis: 50%; }
+    .product_items-container__item {
+        padding: 28rem 30rem;
+        row-gap: 24rem;
+    }
+    .pagination-container { margin-block: 38rem 43rem; }
+ }
+@media (min-width: 768px) and (max-width: 1024px) { 
+    .product_items-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40rem;
+        padding: 28rem;
+    }
+    .content_body.product-list { grid-template-columns: 25% 1fr; grid-column-gap: 36rem; }
+    .product_items-container__item { padding: 38rem 40rem; }
+    .pagination-container { margin-block: 48rem; }
+ }
 /* C̶o̶n̶t̶r̶o̶l̶ B̶o̶x̶ */
